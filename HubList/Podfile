@@ -1,0 +1,3 @@
+target "HubListTests" do
+  pod "Kiwi"
+end
