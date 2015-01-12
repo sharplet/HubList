@@ -112,35 +112,35 @@
 				4AC909391A63D66F000BE093 /* Main.storyboard */,
 				4AC9093C1A63D66F000BE093 /* Images.xcassets */,
 				4AC9093E1A63D66F000BE093 /* LaunchScreen.xib */,
-				4AC9092F1A63D66F000BE093 /* Supporting Files */,
+				4AC9092F1A63D66F000BE093 /* Support */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		4AC9092F1A63D66F000BE093 /* Supporting Files */ = {
+		4AC9092F1A63D66F000BE093 /* Support */ = {
 			isa = PBXGroup;
 			children = (
 				4AC909301A63D66F000BE093 /* Info.plist */,
 				4AC909311A63D66F000BE093 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = Support;
 			sourceTree = "<group>";
 		};
 		4AC909481A63D66F000BE093 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				4AC9094B1A63D66F000BE093 /* HubListTests.m */,
-				4AC909491A63D66F000BE093 /* Supporting Files */,
+				4AC909491A63D66F000BE093 /* Support */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		4AC909491A63D66F000BE093 /* Supporting Files */ = {
+		4AC909491A63D66F000BE093 /* Support */ = {
 			isa = PBXGroup;
 			children = (
 				4AC9094A1A63D66F000BE093 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,9 +163,9 @@
 			productReference = 4AC9092C1A63D66F000BE093 /* HubList.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4AC909441A63D66F000BE093 /* HubListTests */ = {
+		4AC909441A63D66F000BE093 /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4AC909521A63D66F000BE093 /* Build configuration list for PBXNativeTarget "HubListTests" */;
+			buildConfigurationList = 4AC909521A63D66F000BE093 /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
 				C4A680E2538FA0C4AE77C71C /* Check Pods Manifest.lock */,
 				4AC909411A63D66F000BE093 /* Sources */,
@@ -178,7 +178,7 @@
 			dependencies = (
 				4AC909471A63D66F000BE093 /* PBXTargetDependency */,
 			);
-			name = HubListTests;
+			name = Tests;
 			productName = HubListTests;
 			productReference = 4AC909451A63D66F000BE093 /* HubListTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -215,7 +215,7 @@
 			projectRoot = "";
 			targets = (
 				4AC9092B1A63D66F000BE093 /* HubList */,
-				4AC909441A63D66F000BE093 /* HubListTests */,
+				4AC909441A63D66F000BE093 /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -402,7 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,7 +412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -431,7 +431,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_FILE = Tests/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HubList.app/HubList";
@@ -447,7 +447,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Tests/Info.plist;
+				INFOPLIST_FILE = Tests/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HubList.app/HubList";
@@ -475,7 +475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4AC909521A63D66F000BE093 /* Build configuration list for PBXNativeTarget "HubListTests" */ = {
+		4AC909521A63D66F000BE093 /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4AC909531A63D66F000BE093 /* Debug */,
