@@ -1,10 +1,17 @@
 PODS:
+  - ILTesting (0.0.1)
   - Kiwi (2.3.1)
 
 DEPENDENCIES:
+  - ILTesting (from `Podspecs/ILTesting.podspec`)
   - Kiwi
 
+EXTERNAL SOURCES:
+  ILTesting:
+    :podspec: Podspecs/ILTesting.podspec
+
 SPEC CHECKSUMS:
+  ILTesting: bb08299b1b08d381b1e9a8587013efae6b831767
   Kiwi: 73e1400209055ee9c8ba78c6012b6b642d0fb9f7
 
 COCOAPODS: 0.36.0.beta.1

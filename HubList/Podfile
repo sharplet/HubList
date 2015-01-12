@@ -1,3 +1,4 @@
-target "HubListTests" do
+target "Tests" do
   pod "Kiwi"
+  pod "ILTesting", podspec: "Podspecs/ILTesting.podspec"
 end
