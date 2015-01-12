@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		400A9D4E056815ABC2445637 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D57EA96029A600FD67A552 /* libPods-Tests.a */; };
+		4A2E48E91A63DB630078DDDC /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2E48E81A63DB630078DDDC /* Config.m */; };
+		4A2E48EF1A63E3700078DDDC /* top_swift_repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A2E48EE1A63E3700078DDDC /* top_swift_repositories.json */; };
+		4A2E48F11A63E45C0078DDDC /* top_swift_repositories.headers.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A2E48F01A63E45C0078DDDC /* top_swift_repositories.headers.json */; };
 		4AC909321A63D66F000BE093 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC909311A63D66F000BE093 /* main.m */; };
 		4AC909351A63D66F000BE093 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC909341A63D66F000BE093 /* AppDelegate.m */; };
 		4AC909381A63D66F000BE093 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC909371A63D66F000BE093 /* ViewController.m */; };
@@ -30,8 +33,12 @@
 
 /* Begin PBXFileReference section */
 		23D57EA96029A600FD67A552 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A2E48E81A63DB630078DDDC /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		4A2E48EA1A63DE630078DDDC /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4A2E48EB1A63DE630078DDDC /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4A2E48EC1A63DFCD0078DDDC /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		4A2E48EE1A63E3700078DDDC /* top_swift_repositories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = top_swift_repositories.json; sourceTree = "<group>"; };
+		4A2E48F01A63E45C0078DDDC /* top_swift_repositories.headers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = top_swift_repositories.headers.json; sourceTree = "<group>"; };
 		4AC9092C1A63D66F000BE093 /* HubList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HubList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC909301A63D66F000BE093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AC909311A63D66F000BE093 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +93,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4A2E48ED1A63E3700078DDDC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4A2E48F01A63E45C0078DDDC /* top_swift_repositories.headers.json */,
+				4A2E48EE1A63E3700078DDDC /* top_swift_repositories.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		4AC909231A63D66F000BE093 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				4AC9094B1A63D66F000BE093 /* HubListTests.m */,
+				4A2E48ED1A63E3700078DDDC /* Data */,
 				4AC909491A63D66F000BE093 /* Support */,
 			);
 			path = Tests;
@@ -142,6 +159,8 @@
 		4AC909491A63D66F000BE093 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				4A2E48E81A63DB630078DDDC /* Config.m */,
+				4A2E48EC1A63DFCD0078DDDC /* Tests-Prefix.pch */,
 				4AC9094A1A63D66F000BE093 /* Info.plist */,
 			);
 			path = Support;
@@ -239,6 +258,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A2E48EF1A63E3700078DDDC /* top_swift_repositories.json in Resources */,
+				4A2E48F11A63E45C0078DDDC /* top_swift_repositories.headers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AC9094C1A63D66F000BE093 /* HubListTests.m in Sources */,
+				4A2E48E91A63DB630078DDDC /* Config.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +453,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_PREFIX_HEADER = "Tests/Support/Tests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -451,6 +474,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				GCC_PREFIX_HEADER = "Tests/Support/Tests-Prefix.pch";
 				INFOPLIST_FILE = Tests/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
