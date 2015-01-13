@@ -1,3 +1,7 @@
+target "HubList" do
+  pod "EnumeratorKit"
+end
+
 target "Tests" do
   pod "Kiwi"
   pod "ILTesting", podspec: "Podspecs/ILTesting.podspec"
