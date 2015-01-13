@@ -13,6 +13,10 @@
 		4A2E48F11A63E45C0078DDDC /* top_swift_repositories.headers.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A2E48F01A63E45C0078DDDC /* top_swift_repositories.headers.json */; };
 		4A2E48F61A646FA90078DDDC /* HLTopRepositoriesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2E48F51A646FA90078DDDC /* HLTopRepositoriesUITests.m */; };
 		4A9A94A31A64752900165CC0 /* HLTopRepositoriesUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9A94A21A64752900165CC0 /* HLTopRepositoriesUI.m */; };
+		4AC4E2911A64FF3A007AF27B /* HLGitHubClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4E2901A64FF3A007AF27B /* HLGitHubClient.m */; };
+		4AC4E2931A64FF85007AF27B /* HLGitHubClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4E2921A64FF85007AF27B /* HLGitHubClientTests.m */; };
+		4AC4E2971A6501EC007AF27B /* HLGitHubRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4E2951A6501E3007AF27B /* HLGitHubRepository.m */; };
+		4AC4E29A1A650386007AF27B /* Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4E2991A650386007AF27B /* Helpers.m */; };
 		4AC909321A63D66F000BE093 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC909311A63D66F000BE093 /* main.m */; };
 		4AC909351A63D66F000BE093 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC909341A63D66F000BE093 /* AppDelegate.m */; };
 		4AC909381A63D66F000BE093 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC909371A63D66F000BE093 /* ViewController.m */; };
@@ -46,6 +50,13 @@
 		4A9A94A01A64752900165CC0 /* HLTopRepositoriesGateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTopRepositoriesGateway.h; sourceTree = "<group>"; };
 		4A9A94A11A64752900165CC0 /* HLTopRepositoriesUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTopRepositoriesUI.h; sourceTree = "<group>"; };
 		4A9A94A21A64752900165CC0 /* HLTopRepositoriesUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTopRepositoriesUI.m; sourceTree = "<group>"; };
+		4AC4E28F1A64FF3A007AF27B /* HLGitHubClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLGitHubClient.h; sourceTree = "<group>"; };
+		4AC4E2901A64FF3A007AF27B /* HLGitHubClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLGitHubClient.m; sourceTree = "<group>"; };
+		4AC4E2921A64FF85007AF27B /* HLGitHubClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLGitHubClientTests.m; sourceTree = "<group>"; };
+		4AC4E2941A6501E3007AF27B /* HLGitHubRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLGitHubRepository.h; sourceTree = "<group>"; };
+		4AC4E2951A6501E3007AF27B /* HLGitHubRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLGitHubRepository.m; sourceTree = "<group>"; };
+		4AC4E2981A650386007AF27B /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
+		4AC4E2991A650386007AF27B /* Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helpers.m; sourceTree = "<group>"; };
 		4AC9092C1A63D66F000BE093 /* HubList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HubList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC909301A63D66F000BE093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AC909311A63D66F000BE093 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -119,6 +130,17 @@
 			path = TopRepositories;
 			sourceTree = "<group>";
 		};
+		4AC4E28E1A64FF10007AF27B /* GitHub */ = {
+			isa = PBXGroup;
+			children = (
+				4AC4E28F1A64FF3A007AF27B /* HLGitHubClient.h */,
+				4AC4E2901A64FF3A007AF27B /* HLGitHubClient.m */,
+				4AC4E2941A6501E3007AF27B /* HLGitHubRepository.h */,
+				4AC4E2951A6501E3007AF27B /* HLGitHubRepository.m */,
+			);
+			path = GitHub;
+			sourceTree = "<group>";
+		};
 		4AC909231A63D66F000BE093 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +164,7 @@
 		4AC9092E1A63D66F000BE093 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4AC4E28E1A64FF10007AF27B /* GitHub */,
 				4A9A949F1A6474EA00165CC0 /* TopRepositories */,
 				4AC909331A63D66F000BE093 /* AppDelegate.h */,
 				4AC909341A63D66F000BE093 /* AppDelegate.m */,
@@ -168,6 +191,7 @@
 		4AC909481A63D66F000BE093 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				4AC4E2921A64FF85007AF27B /* HLGitHubClientTests.m */,
 				4A2E48F51A646FA90078DDDC /* HLTopRepositoriesUITests.m */,
 				4AC9094B1A63D66F000BE093 /* HubListTests.m */,
 				4A2E48ED1A63E3700078DDDC /* Data */,
@@ -180,6 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				4A2E48E81A63DB630078DDDC /* Config.m */,
+				4AC4E2981A650386007AF27B /* Helpers.h */,
+				4AC4E2991A650386007AF27B /* Helpers.m */,
 				4A2E48EC1A63DFCD0078DDDC /* Tests-Prefix.pch */,
 				4AC9094A1A63D66F000BE093 /* Info.plist */,
 			);
@@ -325,8 +351,10 @@
 			files = (
 				4AC909381A63D66F000BE093 /* ViewController.m in Sources */,
 				4A9A94A31A64752900165CC0 /* HLTopRepositoriesUI.m in Sources */,
+				4AC4E2971A6501EC007AF27B /* HLGitHubRepository.m in Sources */,
 				4AC909351A63D66F000BE093 /* AppDelegate.m in Sources */,
 				4AC909321A63D66F000BE093 /* main.m in Sources */,
+				4AC4E2911A64FF3A007AF27B /* HLGitHubClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +363,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AC9094C1A63D66F000BE093 /* HubListTests.m in Sources */,
+				4AC4E2931A64FF85007AF27B /* HLGitHubClientTests.m in Sources */,
+				4AC4E29A1A650386007AF27B /* Helpers.m in Sources */,
 				4A2E48E91A63DB630078DDDC /* Config.m in Sources */,
 				4A2E48F61A646FA90078DDDC /* HLTopRepositoriesUITests.m in Sources */,
 			);
