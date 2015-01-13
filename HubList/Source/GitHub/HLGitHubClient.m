@@ -3,6 +3,7 @@
 //
 
 #import <EnumeratorKit/EnumeratorKit.h>
+#import "HLDispatch.h"
 #import "HLGitHubClient.h"
 #import "HLGitHubRepository.h"
 
@@ -21,11 +22,11 @@
 - (void)fetchTopRepositoriesWithCompletion:(HLArrayResult)completion
 {
     [[self.URLSession dataTaskWithURL:self.topRepositoriesURL completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        if (error) { completion(nil, error); return; }
+        if (error) { hl_dispatch_async_main(completion, nil, error); return; }
         id json = [self parseJSONData:data error:&error];
-        if (error) { completion(nil, error); return; }
+        if (error) { hl_dispatch_async_main(completion, nil, error); return; }
         NSArray *repositories = [self repositoriesFromJSONResponse:json];
-        completion(repositories, nil);
+        hl_dispatch_async_main(completion, repositories, nil);
     }] resume];
 }
 
