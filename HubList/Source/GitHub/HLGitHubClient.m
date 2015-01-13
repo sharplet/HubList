@@ -2,6 +2,7 @@
 //  Copyright (c) 2015 Adam Sharp. All rights reserved.
 //
 
+#import <EnumeratorKit/EnumeratorKit.h>
 #import "HLGitHubClient.h"
 #import "HLGitHubRepository.h"
 
@@ -36,12 +37,9 @@
 
 - (NSArray *)repositoriesFromJSONResponse:(id)json
 {
-    NSMutableArray *repositories = [NSMutableArray new];
-    for (id item in json[@"items"]) {
-        HLGitHubRepository *repository = [[HLGitHubRepository alloc] initWithJSONObject:item];
-        [repositories addObject:repository];
-    }
-    return [repositories copy];
+    return [json[@"items"] map:^(id item){
+        return [[HLGitHubRepository alloc] initWithJSONObject:item];
+    }];
 }
 
 @end
