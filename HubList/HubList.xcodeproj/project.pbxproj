@@ -24,7 +24,6 @@
 		4AC9093B1A63D66F000BE093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC909391A63D66F000BE093 /* Main.storyboard */; };
 		4AC9093D1A63D66F000BE093 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC9093C1A63D66F000BE093 /* Images.xcassets */; };
 		4AC909401A63D66F000BE093 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AC9093E1A63D66F000BE093 /* LaunchScreen.xib */; };
-		4AC9094C1A63D66F000BE093 /* HubListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9094B1A63D66F000BE093 /* HubListTests.m */; };
 		C5DB9A86842C11AEC293C6A3 /* libPods-HubListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99694F877D8111CDE383FDAB /* libPods-HubListTests.a */; };
 		F7567C2E7696DE2FBDD367F6 /* libPods-HubList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1AD9049441243BF4C5EB15 /* libPods-HubList.a */; };
 /* End PBXBuildFile section */
@@ -72,7 +71,6 @@
 		4AC9093F1A63D66F000BE093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4AC909451A63D66F000BE093 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC9094A1A63D66F000BE093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4AC9094B1A63D66F000BE093 /* HubListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HubListTests.m; sourceTree = "<group>"; };
 		99694F877D8111CDE383FDAB /* libPods-HubListTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HubListTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1AD9049441243BF4C5EB15 /* libPods-HubList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HubList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6264ABB9C3156B95B331A68 /* Pods-HubList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HubList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HubList/Pods-HubList.debug.xcconfig"; sourceTree = "<group>"; };
@@ -204,7 +202,6 @@
 				4AC4E2921A64FF85007AF27B /* HLGitHubClientTests.m */,
 				4AC4E29B1A6519F8007AF27B /* HLGitHubRepositoryTests.m */,
 				4A2E48F51A646FA90078DDDC /* HLTopRepositoriesUITests.m */,
-				4AC9094B1A63D66F000BE093 /* HubListTests.m */,
 				4A2E48ED1A63E3700078DDDC /* Data */,
 				4AC909491A63D66F000BE093 /* Support */,
 			);
@@ -406,7 +403,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AC4E29C1A6519F8007AF27B /* HLGitHubRepositoryTests.m in Sources */,
-				4AC9094C1A63D66F000BE093 /* HubListTests.m in Sources */,
 				4AC4E2931A64FF85007AF27B /* HLGitHubClientTests.m in Sources */,
 				4AC4E29A1A650386007AF27B /* Helpers.m in Sources */,
 				4A2E48E91A63DB630078DDDC /* Config.m in Sources */,
