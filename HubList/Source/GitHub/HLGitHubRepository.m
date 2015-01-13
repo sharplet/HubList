@@ -9,6 +9,7 @@
 - (instancetype)initWithJSONObject:(id)json
 {
     if ((self = [super init])) {
+        _name = [json[@"name"] copy];
     }
     return self;
 }

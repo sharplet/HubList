@@ -6,6 +6,8 @@
 
 @interface HLGitHubRepository : NSObject
 
+@property (copy) NSString *name;
+
 - (instancetype)initWithJSONObject:(id)json;
 
 @end

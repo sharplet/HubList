@@ -17,6 +17,7 @@
 		4AC4E2931A64FF85007AF27B /* HLGitHubClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4E2921A64FF85007AF27B /* HLGitHubClientTests.m */; };
 		4AC4E2971A6501EC007AF27B /* HLGitHubRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4E2951A6501E3007AF27B /* HLGitHubRepository.m */; };
 		4AC4E29A1A650386007AF27B /* Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4E2991A650386007AF27B /* Helpers.m */; };
+		4AC4E29C1A6519F8007AF27B /* HLGitHubRepositoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC4E29B1A6519F8007AF27B /* HLGitHubRepositoryTests.m */; };
 		4AC909321A63D66F000BE093 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC909311A63D66F000BE093 /* main.m */; };
 		4AC909351A63D66F000BE093 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC909341A63D66F000BE093 /* AppDelegate.m */; };
 		4AC909381A63D66F000BE093 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC909371A63D66F000BE093 /* ViewController.m */; };
@@ -57,6 +58,7 @@
 		4AC4E2951A6501E3007AF27B /* HLGitHubRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLGitHubRepository.m; sourceTree = "<group>"; };
 		4AC4E2981A650386007AF27B /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
 		4AC4E2991A650386007AF27B /* Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helpers.m; sourceTree = "<group>"; };
+		4AC4E29B1A6519F8007AF27B /* HLGitHubRepositoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLGitHubRepositoryTests.m; sourceTree = "<group>"; };
 		4AC9092C1A63D66F000BE093 /* HubList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HubList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC909301A63D66F000BE093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AC909311A63D66F000BE093 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				4AC4E2921A64FF85007AF27B /* HLGitHubClientTests.m */,
+				4AC4E29B1A6519F8007AF27B /* HLGitHubRepositoryTests.m */,
 				4A2E48F51A646FA90078DDDC /* HLTopRepositoriesUITests.m */,
 				4AC9094B1A63D66F000BE093 /* HubListTests.m */,
 				4A2E48ED1A63E3700078DDDC /* Data */,
@@ -362,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AC4E29C1A6519F8007AF27B /* HLGitHubRepositoryTests.m in Sources */,
 				4AC9094C1A63D66F000BE093 /* HubListTests.m in Sources */,
 				4AC4E2931A64FF85007AF27B /* HLGitHubClientTests.m in Sources */,
 				4AC4E29A1A650386007AF27B /* Helpers.m in Sources */,
