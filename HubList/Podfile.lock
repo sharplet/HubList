@@ -1,8 +1,14 @@
 PODS:
+  - EnumeratorKit (0.1.2):
+    - EnumeratorKit/Core (= 0.1.2)
+  - EnumeratorKit/Core (0.1.2):
+    - EnumeratorKit/EKFiber
+  - EnumeratorKit/EKFiber (0.1.2)
   - ILTesting (0.0.1)
   - Kiwi (2.3.1)
 
 DEPENDENCIES:
+  - EnumeratorKit
   - ILTesting (from `Podspecs/ILTesting.podspec`)
   - Kiwi
 
@@ -11,6 +17,7 @@ EXTERNAL SOURCES:
     :podspec: Podspecs/ILTesting.podspec
 
 SPEC CHECKSUMS:
+  EnumeratorKit: 0af2e799ac8af72e9fb01798c8dcbd7c1ae7a3e7
   ILTesting: bb08299b1b08d381b1e9a8587013efae6b831767
   Kiwi: 73e1400209055ee9c8ba78c6012b6b642d0fb9f7
 
