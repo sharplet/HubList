@@ -11,6 +11,7 @@
 		4A2E48E91A63DB630078DDDC /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2E48E81A63DB630078DDDC /* Config.m */; };
 		4A2E48EF1A63E3700078DDDC /* top_swift_repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A2E48EE1A63E3700078DDDC /* top_swift_repositories.json */; };
 		4A2E48F11A63E45C0078DDDC /* top_swift_repositories.headers.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A2E48F01A63E45C0078DDDC /* top_swift_repositories.headers.json */; };
+		4A5D60BD1A6675DF00D446DF /* Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D60BC1A6675DF00D446DF /* Helpers.m */; };
 		4AC909321A63D66F000BE093 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC909311A63D66F000BE093 /* main.m */; };
 		4AC909351A63D66F000BE093 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC909341A63D66F000BE093 /* AppDelegate.m */; };
 		4AC909381A63D66F000BE093 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC909371A63D66F000BE093 /* ViewController.m */; };
@@ -40,6 +41,8 @@
 		4A2E48EC1A63DFCD0078DDDC /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		4A2E48EE1A63E3700078DDDC /* top_swift_repositories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = top_swift_repositories.json; sourceTree = "<group>"; };
 		4A2E48F01A63E45C0078DDDC /* top_swift_repositories.headers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = top_swift_repositories.headers.json; sourceTree = "<group>"; };
+		4A5D60BB1A6675DF00D446DF /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
+		4A5D60BC1A6675DF00D446DF /* Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helpers.m; sourceTree = "<group>"; };
 		4AC4E29D1A65225D007AF27B /* HLDispatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLDispatch.h; sourceTree = "<group>"; };
 		4AC9092C1A63D66F000BE093 /* HubList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HubList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC909301A63D66F000BE093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -170,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				4A2E48E81A63DB630078DDDC /* Config.m */,
+				4A5D60BB1A6675DF00D446DF /* Helpers.h */,
+				4A5D60BC1A6675DF00D446DF /* Helpers.m */,
 				4A2E48EC1A63DFCD0078DDDC /* Tests-Prefix.pch */,
 				4AC9094A1A63D66F000BE093 /* Info.plist */,
 			);
@@ -355,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A5D60BD1A6675DF00D446DF /* Helpers.m in Sources */,
 				4AC9094C1A63D66F000BE093 /* HubListTests.m in Sources */,
 				4A2E48E91A63DB630078DDDC /* Config.m in Sources */,
 			);

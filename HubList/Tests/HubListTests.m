@@ -3,10 +3,18 @@
 //
 
 #import <Kiwi/Kiwi.h>
+#import "Helpers.h"
 
 SPEC_BEGIN(HubListTests)
 
 describe(@"HubList", ^{
+    beforeEach(^{
+        [ILCannedURLProtocol loadTestDataFromFile:@"top_swift_repositories"];
+    });
+    afterEach(^{
+        [ILCannedURLProtocol resetTestData];
+    });
+
     it(@"can fetch a canned URL", ^{
         NSURLSession *session = [NSURLSession sharedSession];
         NSURL *url = [NSURL URLWithString:@"https://api.github.com/search/repositories?q=language:swift&sort=stars&order=desc"];
