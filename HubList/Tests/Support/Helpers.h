@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ILTesting/ILCannedURLProtocol.h>
 
-NSBundle *testBundle(void);
-NSDictionary *loadHeaders(void);
-NSData *loadRepositoriesResponseData(void);
+@interface ILCannedURLProtocol (HubListTestHelpers)
++ (void)loadTestDataFromFile:(NSString *)file;
++ (void)resetTestData;
+@end

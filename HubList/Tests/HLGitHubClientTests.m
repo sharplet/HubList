@@ -3,7 +3,6 @@
 //
 
 #import <Kiwi/Kiwi.h>
-#import <ILTesting/ILCannedURLProtocol.h>
 #import <EnumeratorKit/EnumeratorKit.h>
 #import "Helpers.h"
 #import "HLGitHubClient.h"
@@ -21,8 +20,7 @@ SPEC_BEGIN(HLGitHubClientTests)
 describe(@"HLGitHubClient", ^{
     beforeEach(^{
         [ILCannedURLProtocol setCannedStatusCode:200];
-        [ILCannedURLProtocol setCannedHeaders:loadHeaders()];
-        [ILCannedURLProtocol setCannedResponseData:loadRepositoriesResponseData()];
+        [ILCannedURLProtocol loadTestDataFromFile:@"top_swift_repositories"];
         [ILCannedURLProtocol setShouldInitWithRequestBlock:^BOOL(NSURLRequest *request) {
             NSString *expectedURL = @"https://api.github.com/search/repositories";
             return [request.URL.absoluteString hasPrefix:expectedURL];

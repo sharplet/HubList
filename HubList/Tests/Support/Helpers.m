@@ -8,24 +8,42 @@
 
 #import "Helpers.h"
 
+// Get the test bundle
+static NSBundle *testBundle(void);
+
+
+@implementation ILCannedURLProtocol (HubListTestHelpers)
+
++ (void)loadTestDataFromFile:(NSString *)file
+{
+    NSString *headers = [testBundle() pathForResource:file ofType:@"headers.json"];
+    NSError *error;
+    id object = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:headers] options:0 error:&error];
+    if (error) { NSLog(@"%@", error); }
+    [ILCannedURLProtocol setCannedHeaders:object];
+
+    NSString *json = [testBundle() pathForResource:file ofType:@"json"];
+    [ILCannedURLProtocol setCannedResponseData:[NSData dataWithContentsOfFile:json]];
+}
+
++ (void)resetTestData
+{
+    [ILCannedURLProtocol setCannedStatusCode:200];
+    [ILCannedURLProtocol setCannedHeaders:nil];
+    [ILCannedURLProtocol setCannedResponseData:nil];
+}
+
+@end
+
+
+// Test bundle implementation
+
 @interface HLTestHelpers : NSObject @end
 @implementation HLTestHelpers @end
 
-NSBundle *testBundle(void) {
-    return [NSBundle bundleForClass:[HLTestHelpers class]];
-}
-
-NSDictionary *loadHeaders(void) {
-    NSString *headersPath = [testBundle() pathForResource:@"top_swift_repositories.headers" ofType:@"json"];
-    NSData *headersData = [NSData dataWithContentsOfFile:headersPath];
-    NSError *error;
-    id object = [NSJSONSerialization JSONObjectWithData:headersData options:0 error:&error];
-    if (error) { NSLog(@"%@", error); }
-    return object;
-}
-
-NSData *loadRepositoriesResponseData(void) {
-    NSString *responsePath = [testBundle() pathForResource:@"top_swift_repositories" ofType:@"json"];
-    NSData *responseData = [NSData dataWithContentsOfFile:responsePath];
-    return responseData;
+static NSBundle *testBundle(void) {
+    static dispatch_once_t token;
+    static NSBundle *testBundle;
+    dispatch_once(&token, ^{ testBundle = [NSBundle bundleForClass:[HLTestHelpers class]]; });
+    return testBundle;
 }
