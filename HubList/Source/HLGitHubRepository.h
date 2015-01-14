@@ -10,4 +10,8 @@
 
 @interface HLGitHubRepository : NSObject
 
+@property (readonly) NSString *name;
+
+- (instancetype)initWithJSON:(id)json;
+
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		400A9D4E056815ABC2445637 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D57EA96029A600FD67A552 /* libPods-Tests.a */; };
+		4A1798971A667D1000B461B2 /* HLGitHubRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1798961A667D1000B461B2 /* HLGitHubRepository.m */; };
 		4A2E48E91A63DB630078DDDC /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A2E48E81A63DB630078DDDC /* Config.m */; };
 		4A2E48EF1A63E3700078DDDC /* top_swift_repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A2E48EE1A63E3700078DDDC /* top_swift_repositories.json */; };
 		4A2E48F11A63E45C0078DDDC /* top_swift_repositories.headers.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A2E48F01A63E45C0078DDDC /* top_swift_repositories.headers.json */; };
@@ -38,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		23D57EA96029A600FD67A552 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A1798951A667D1000B461B2 /* HLGitHubRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLGitHubRepository.h; sourceTree = "<group>"; };
+		4A1798961A667D1000B461B2 /* HLGitHubRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLGitHubRepository.m; sourceTree = "<group>"; };
 		4A2E48E81A63DB630078DDDC /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
 		4A2E48EA1A63DE630078DDDC /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4A2E48EB1A63DE630078DDDC /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +165,8 @@
 				4AC4E2A41A65C273007AF27B /* HLTopRepositoriesGateway.h */,
 				4AC4E2A81A65C644007AF27B /* HLGitHubClient.h */,
 				4AC4E2A91A65C644007AF27B /* HLGitHubClient.m */,
+				4A1798951A667D1000B461B2 /* HLGitHubRepository.h */,
+				4A1798961A667D1000B461B2 /* HLGitHubRepository.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -370,6 +375,7 @@
 			files = (
 				4AC909381A63D66F000BE093 /* ViewController.m in Sources */,
 				4AC4E2A31A65C1C2007AF27B /* HLTopRepositoriesUI.m in Sources */,
+				4A1798971A667D1000B461B2 /* HLGitHubRepository.m in Sources */,
 				4AC909351A63D66F000BE093 /* AppDelegate.m in Sources */,
 				4AC909321A63D66F000BE093 /* main.m in Sources */,
 				4AC4E2AA1A65C644007AF27B /* HLGitHubClient.m in Sources */,

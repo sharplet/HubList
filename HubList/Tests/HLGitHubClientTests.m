@@ -3,8 +3,10 @@
 //
 
 #import <Kiwi/Kiwi.h>
+#import <EnumeratorKit/EnumeratorKit.h>
 #import "Helpers.h"
 #import "HLGitHubClient.h"
+#import "HLGitHubRepository.h"
 
 SPEC_BEGIN(HLGitHubClientTests)
 
@@ -60,6 +62,21 @@ describe(@"HLGitHubClient", ^{
                 @"Async",
                 @"SwiftHN"
             ]];
+        });
+
+        it(@"returns HLGitHubRepository instances", ^{
+            HLGitHubClient *client = [HLGitHubClient new];
+
+            NSArray __block *fetchedRepositories;
+            [client fetchTopRepositoriesWithCompletion:^(NSArray *topRepositories, NSError *error) {
+                fetchedRepositories = topRepositories;
+            }];
+
+            [[expectFutureValue(theValue(
+                [fetchedRepositories all:^(id obj){
+                    return [obj isKindOfClass:[HLGitHubRepository class]];
+                }]
+            )) shouldEventually] beYes];
         });
     });
 });

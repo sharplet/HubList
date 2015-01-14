@@ -10,4 +10,12 @@
 
 @implementation HLGitHubRepository
 
+- (instancetype)initWithJSON:(id)json
+{
+    if ((self = [super init])) {
+        _name = json[@"name"];
+    }
+    return self;
+}
+
 @end

@@ -2,7 +2,10 @@
 //  Copyright (c) 2015 Adam Sharp. All rights reserved.
 //
 
+#import <EnumeratorKit/EnumeratorKit.h>
+
 #import "HLGitHubClient.h"
+#import "HLGitHubRepository.h"
 #import "HLDispatch.h"
 
 @implementation HLGitHubClient
@@ -35,7 +38,9 @@
 
 - (NSArray *)repositoriesFromJSON:(id)json
 {
-    return json[@"items"];
+    return [json[@"items"] map:^(id item){
+        return [[HLGitHubRepository alloc] initWithJSON:item];
+    }];
 }
 
 @end
