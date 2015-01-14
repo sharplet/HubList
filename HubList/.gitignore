@@ -1,3 +1,5 @@
 Pods/
+Build/
 xcuserdata/
 *.xccheckout
+vendor/bundle/
